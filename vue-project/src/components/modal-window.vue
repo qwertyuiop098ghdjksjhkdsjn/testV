@@ -53,6 +53,20 @@
     .form_sectionOne_inputs input {
         border: 1px solid #2a4cc7;
         width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .form_sectionOne_inputs button {
+        border: 1px solid #2a4cc7;
+        color: white;
+        cursor: pointer;
+        background: linear-gradient(265.48deg, #4870FF -5.06%, #FA00FF 94.87%);
+        width: 20%;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 8px;
     }
  
     .modal {
