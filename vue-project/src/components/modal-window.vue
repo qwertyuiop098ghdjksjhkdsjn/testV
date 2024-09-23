@@ -63,7 +63,6 @@
         color: white;
         cursor: pointer;
         background: linear-gradient(265.48deg, #4870FF -5.06%, #FA00FF 94.87%);
-        width: 20%;
         margin: 5px 0;
         padding: 10px;
         border-radius: 8px;
@@ -73,7 +72,7 @@
         background: #fff;
         border-radius: 8px;
         padding: 15px;
-        min-width: 420px;
+        width: 95%;
         max-width: 420px;
         position: absolute;
         top: 50%;

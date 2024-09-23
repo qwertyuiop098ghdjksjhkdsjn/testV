@@ -87,11 +87,11 @@ header {
         font-size: 48px;
         text-align: center;
         margin-top: 64px;
-        width: 700px;
+        max-width: 700px;
     }
 
     h3 {
-        width: 450px;
+        max-width: 450px;
         color: white;
         font-size: 28px;
         font-weight: 200;
@@ -131,8 +131,8 @@ header {
 
     .form {
         background: linear-gradient(268.31deg, rgba(79, 89, 124, 0.4) 0%, rgba(123, 135, 175, 0.4) 50.52%, rgba(63, 72, 105, 0.4) 100%);
-        width: 864px;
-        height: 150px;
+        max-width: 864px;
+        min-height: 150px;
         border-radius: 16px;
         margin: 59px auto;
         padding: 18px 16px;
@@ -160,7 +160,7 @@ header {
         font-size: 12px;
 
         p {
-            width: 74px;
+            max-width: 74px;
         }
 
         img {
@@ -203,7 +203,9 @@ header {
     .headline {
         display: flex;
         margin: 0 auto;
-        width: 1040px;
+        max-width: 1040px;
+        padding: 0 30px;
+        width: 100%;
         justify-content: space-between;
         color: white;
         align-items: flex-end;
@@ -229,14 +231,14 @@ header {
 
     .cards {
         display: flex;
-        width: 1040px;
+        max-width: 1040px;
         justify-content: space-between;
         margin: 0 auto;
         flex-wrap: wrap;
     }
 
     .sixSmallCards {
-        width: 512px;
+        max-width: 512px;
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
@@ -252,7 +254,7 @@ header {
         color: white;
         display: flex;
         gap: 16px;
-        width: 512px;
+        max-width: 512px;
         flex-wrap: wrap;
 
         p:hover {
@@ -315,12 +317,12 @@ header {
         color: white;
         font-size: 15px;
         margin-top: 24px;
-        width: 655px;
+        max-width: 655px;
     }
     
     .form_sectionTwo {
         color: white;
-        width: 1040px;
+        max-width: 1040px;
         margin: 74px auto;
     }
     
@@ -338,7 +340,8 @@ header {
         gap: 16px;
 
         input {
-            width: 404px;
+            max-width: 404px;
+            width: 100%;
             height: 44px;
             border-radius: 8px;
             border: none;
@@ -352,7 +355,7 @@ header {
         display: flex;
         align-items: center;
         margin-top: 12px;
-        width: 400px;
+        max-width: 400px;
         justify-content: space-between;
 
         button {
@@ -373,7 +376,8 @@ header {
     }
 
     .form_sectionTwo_inputs .inputLarge {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
         height: 128px;
         border-radius: 8px;
         border: none;
@@ -397,7 +401,7 @@ footer {
     padding: 24px 0;
 
     .paragraph {
-        width: 1040px;
+        max-width: 1040px;
         text-align: center;
         margin: 16px 0 49px 0;
     }
@@ -405,11 +409,114 @@ footer {
     .info {
         display: flex;
         justify-content: space-between;
-        width: 1040px;
+        max-width: 1040px;
     }
     
     .icons {
         display: flex;
         gap: 12px;
     }
+}
+
+
+@media screen and (max-width: 860px) {
+
+    header {
+        .menu {
+            display: none;
+        }
+    }
+
+    .form_sectionOne_inputs {
+        flex-direction: column;
+    }
+
+   .one .form_sectionOne_inputs input {
+        width: 100%;
+    }
+
+    .form_sectionOne {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two {
+        height: auto;
+    }
+
+    .two .form_sectionTwo {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 74px 0;
+        align-items: center;
+    }
+
+    footer .paragraph {
+        padding: 0 30px;
+    }
+
+    .cards .sixSmallCards {
+        justify-content: center;
+    }
+
+    .two .cardsText {
+        padding: 0 30px;
+    }
+
+    .two .threeBigCards img {
+        width: 100%;
+    }
+
+    .threeBigCards {
+       flex-direction: column;
+       padding: 0 30px;
+    }
+
+    .threeBigCards >div {
+        width: 100%;
+    }
+
+    .form_sectionTwo  h1 {
+        text-align: center;
+    }
+    .form_sectionTwo  p {
+        text-align: center;
+    }
+
+    .form_sectionTwo_inputs {
+        padding: 0 30px;
+    }
+
+    .form_sectionTwo_checkbox {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form_container_items img {
+            width: 24px;
+            height: 24px;
+        }
+
+    .info {
+        flex-direction: column;
+    }
+
+    footer div a {
+        display: block;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .one h1 {
+        font-size: 30px;
+    }   
+    .one h3 {
+        font-size: 20px;
+    }   
 }

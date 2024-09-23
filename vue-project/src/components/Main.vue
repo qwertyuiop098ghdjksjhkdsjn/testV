@@ -58,7 +58,7 @@
                 <input type="checkbox"/>
                 <p>I accept the <span class="privacyPolicy">Privacy Policy</span></p>
             </div>
-        </div>
+        </div> 
         <div class="headline">
             <div>
                 <h4>Our Games</h4>
@@ -182,7 +182,7 @@
             </div>  
         </div>
 
-    </footer>
+    </footer>  
 </template>
 
 <script>
